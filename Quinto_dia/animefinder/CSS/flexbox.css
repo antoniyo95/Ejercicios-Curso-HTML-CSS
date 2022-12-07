@@ -1,0 +1,49 @@
+.container {
+    background-color: blue;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly; /* Eje X */
+    align-items: center; /* Eje Y */
+    flex-wrap: wrap;
+    flex-direction: row; /* El eje Y e X se invierte */
+}
+
+.item {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    display: inline-block;
+}
+
+/* navbar */
+.navbar {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+/*
+h1 {
+    border: 1px solid red;
+}
+
+ul {
+    border: 1px solid red;
+}
+
+ul, h1 {
+    border: 1px solid red;
+}
+*/
+.navbar .list {
+    display: flex;
+}
+.navbar .list .list-item a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.navbar .list .list-item a, .navbar {
+    color: #FFF;
+}
