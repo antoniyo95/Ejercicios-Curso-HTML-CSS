@@ -1,0 +1,52 @@
+/* Transiciones y Animaciones */
+
+.navbar > h1 {
+    font-size: 1.2rem;
+    transition: font-size .3s linear, color .3s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+.navbar > h1:hover {
+    cursor: pointer;
+    color: red;
+    font-size: 1rem;
+    }
+}
+
+/* 1º: Definir animacion */
+@keyframes example {
+    0% {width: 20%;}
+    50% {width: 80%;}
+    100% {width: 20%;}
+}
+
+/*2º: Usar la animacion */
+#animate {
+    animation: example 5s;
+    position: absolute;
+    background-color: aqua;
+    top: 50px;
+    left: 50px;
+}
+
+/* (Navbar con "Sticky" no se come lo que tiene debajo como hace "fixed")
+.navbar {
+    position: sticky;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+*/
+
+.navbar {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Activar cuando pases el raton */
+/*#animate:hover {
+    animation: example 2s;
+}
+*/
